@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "nixpkgs-for-tests-and-lib-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743532938,
+        "narHash": "sha256-Wxj4mw6NEWDI8+GKiBmpoKtBsq8rsjNeMxmHVsbgXIA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "31c8df7192c9e5196c5a141b3098afa679c027b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "procex-for-tests-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661776791,
+        "narHash": "sha256-AWTcAKHdIkfBLuY1+WvenyNR40qdUlCKGe5q7crAOJ4=",
+        "owner": "L-as",
+        "repo": "procex",
+        "rev": "d489c157e8ad0c2f2a65dfe0878ab720aea5209e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "L-as",
+        "repo": "procex",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs-for-tests-and-lib-src": "nixpkgs-for-tests-and-lib-src",
+        "procex-for-tests-src": "procex-for-tests-src"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
