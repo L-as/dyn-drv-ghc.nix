@@ -39,7 +39,7 @@
     in {
       overlays = {
         default = final: prev:
-          let ghc = final.haskellPackages.ghcWithPackages (o: [ o.procex ]); in
+          let ghc = final.haskellPackages.ghcWithPackages (o: [ o.procex o.directory o.SHA o.yocto ]); in
           {
             dyn-drv-ghc = builtins.derivation {
               inherit (final) system;
@@ -48,6 +48,7 @@
               args = [ ./Script.hs ];
               requiredSystemFeatures = [ "recursive-nix" ];
               SRC = ghc-src;
+              GHC = ghc;
             };
           };
       };
